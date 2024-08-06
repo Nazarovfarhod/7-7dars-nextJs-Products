@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className=" bg-slate-300 pt-10">
+        <header className="bg-slate-300 pt-10">
           {" "}
           <Navbar />
         </header>
