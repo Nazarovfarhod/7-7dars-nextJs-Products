@@ -36,7 +36,9 @@ async function Home() {
                   </h1>
                   <p className="italic">
                     <span className="font-bold">Brand: </span>
-                    {prod.brand}
+                    {prod.brand
+                      ? prod.brand
+                      : "This product does not have a brand name."}
                   </p>
                   <p className="italic underline mb-10 mt-4 flex flex-col items-center gap-2">
                     For more info click the card{" "}

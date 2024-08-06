@@ -19,11 +19,20 @@ async function singlePage({ params }) {
         </figure>
         <div className="w-full text-center flex flex-col justify-center items-center">
           <h2 className="text-4xl font-bold">{data.title}</h2>
-          <p className="mb-10 italic font-semibold">({data.brand})</p>
+          <p className="mb-10 italic font-semibold">
+            (
+            {data.brand
+              ? data.brand
+              : "This product does not have a brand name."}
+            )
+          </p>
           <p className="mb-10">{data.description}.</p>
-          <div className="flex justify-evenly w-full mb-8">
+          <div className="flex justify-evenly items-center w-full mb-8">
             <span className="opacity-50 line-through text-lg">
               Old Price: ${data.price}{" "}
+            </span>
+            <span className="px-7 py-2 text-white rounded-full bg-red-400">
+              - {data.discountPercentage}%
             </span>
             <span className="text-lg">
               Sale Price: $
@@ -38,7 +47,9 @@ async function singlePage({ params }) {
               Rating: <FaStar className="text-yellow-300 w-6 h-6" />{" "}
               {data.rating}
             </p>
-            <p className="italic font-semibold">We have {data.stock} from this product.</p>
+            <p className="italic font-semibold">
+              We have {data.stock} from this product.
+            </p>
             <Link href="/" className="btn btn-primary px-20">
               Back
             </Link>
