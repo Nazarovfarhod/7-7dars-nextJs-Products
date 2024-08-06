@@ -39,7 +39,7 @@ function Navbar() {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu text-xl italic menu-horizontal px-1">
+          <ul className="menu flex gap-3 text-xl italic menu-horizontal px-1">
             <li>
               <Link href="/">Home</Link>
             </li>
