@@ -1,4 +1,3 @@
-import React from 'eact'
 
 function about() {
   return (
