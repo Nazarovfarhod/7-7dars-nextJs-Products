@@ -48,7 +48,7 @@ async function singlePage({ params }) {
               {data.rating}
             </p>
             <p className="italic font-semibold">
-              We have {data.stock} from this product.
+              We have {data.stock} of from this product.
             </p>
             <Link href="/" className="btn btn-primary px-20">
               Back
