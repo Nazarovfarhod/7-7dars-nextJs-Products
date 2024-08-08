@@ -13,8 +13,8 @@ async function Home() {
   const { data } = await getData();
 
   return (
-    <div className="w-full py-6  container mx-auto">
-       <header className="bg-slate-300 pt-10 sticky top-0 z-30 mb-10">
+    <div className="w-full pb-6  container mx-auto">
+       <header className="bg-slate-300 sticky top-0 z-30 mb-10">
           {" "}
           <Navbar />
         </header>
