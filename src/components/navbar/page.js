@@ -2,8 +2,8 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <div className="w-full px-5 mx-auto">
-      <div className="navbar bg-base-100 px-5 rounded-[25px] lg:px-10">
+    <div className="w-full mx-auto">
+      <div className="navbar bg-base-100 px-5 rounded-b-[25px] lg:px-10">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,7 +30,7 @@ function Navbar() {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/about">About</Link>
+                <Link href="/about">Books</Link>
               </li>
             </ul>
           </div>
@@ -44,7 +44,7 @@ function Navbar() {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/about">About</Link>
+              <Link href="/about">Books</Link>
             </li>
           </ul>
         </div>

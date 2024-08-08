@@ -1,3 +1,4 @@
+import Navbar from "@/components/navbar/page";
 import Link from "next/link";
 import { TbHandClick } from "react-icons/tb";
 
@@ -12,7 +13,11 @@ async function Home() {
   const { data } = await getData();
 
   return (
-    <div className="w-full px-4 py-6  container mx-auto">
+    <div className="w-full py-6  container mx-auto">
+       <header className="bg-slate-300 pt-10 sticky top-0 z-30 mb-10">
+          {" "}
+          <Navbar />
+        </header>
       <h1 className="text-4xl font-bold w-full text-center mb-10">Products</h1>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {data.products.map((prod) => {
