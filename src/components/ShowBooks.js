@@ -26,7 +26,7 @@ const handleSave = (editingBook, setEditingBook) => {
   const url = `https://online-json-server-api.up.railway.app/project/66b4546700b1a8ec3af1d68d/books/${editingBook.id}`;
 
   fetch(url, {
-    method: "PUT",
+    method: "PATCH",
     headers: {
       "Content-Type": "application/json",
     },
