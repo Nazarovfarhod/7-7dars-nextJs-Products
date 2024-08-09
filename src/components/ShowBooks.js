@@ -95,7 +95,7 @@ function ShowBooks({ books }) {
                   </h2>
                   <p>
                     <span className="font-bold"> Author:</span>{" "}
-                    <span>{book.author}</span>
+                    <span className="capitalize">{book.author}</span>
                   </p>
                 </div>
               )}
