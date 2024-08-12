@@ -50,7 +50,7 @@ function ShowBooks({ books }) {
       {books.data.map((book) => {
         return (
           <div key={book.id} className="p-2">
-            <div className="card h-96 w-72 bg-base-100 shadow-xl">
+            <div className="card h-96 w-72 bg-base-100 shadow-2xl shadow-black">
               <div className="flex justify-between pt-2 px-5">
                 <button
                   type="button"
